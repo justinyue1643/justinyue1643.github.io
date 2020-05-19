@@ -50,7 +50,7 @@ class Particle {
         let dx = mouse.x - this.x;
         let dy = mouse.y - this.y;
         let distance = Math.sqrt(dx * dx + dy * dy);
-        if (distance < mouse.radius + this.size) {
+        /*if (distance < mouse.radius + this.size) {
             if (mouse.x < this.x && this.x < canvas.width - this.size * 10) {
                 this.x += 10;
             }
@@ -63,10 +63,10 @@ class Particle {
             if (mouse.y > this.y && this.y > canvas.height * 10) {
                 this.y -= 10;
             }
-        }
+        }*/
 
-        this.x += this.directionX;
-        this.y += this.directionY;
+        this.x += this.directionX * 0.4;
+        this.y += this.directionY * 0.4;
         this.draw();
     }
 }
@@ -98,8 +98,8 @@ function animate() {
     ctx.font = "30px Comic Sans MS";
     ctx.fillStyle = "white";
     ctx.textAlign = "center";
-    ctx.fillText("Justin Yue", canvas.width / 2, canvas.height / 2);
-    ctx.fillText("UCI CS Major, Car Enthusiast/F1 Fan, Robotics Nerd", canvas.width/2, canvas.height/2 + 50);
+    ctx.fillText("Justin Yue", canvas.width / 2, canvas.height / 2 - 100);
+    ctx.fillText("UCI CS Major, Car Enthusiast/F1 Fan, Robotics Nerd", canvas.width/2, canvas.height/2 - 50);
 }
 
 window.addEventListener('resize',
