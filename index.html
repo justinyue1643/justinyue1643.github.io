@@ -1,72 +1,79 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <title>Justin Yue's Portfolio</title>
-        <meta charset = "utf-8">
-        <link rel = "stylesheet" href = "design_files/css/home_styles.css">
-        <meta name = "viewport" content = "width=device.width, initial-scale=1">
-        <!--<link href = "stylesheet" href = "./design_files/css/home_styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">-->
-        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity = "sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="crossorigin="anonymous"/>
-    </head>
+<html lang="en">
 
-    <body>
-        <header>
-            <div class = "logo">
-                <img src = "design_files/Images/logo_final.png" alt = "">
+<head>
+    <title>Justin Yue's Portfolio</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="design_files/css/home_styles.css">
+    <meta name="viewport" content="width=device.width, initial-scale=1">
+    <link href="stylesheet" href="./design_files/css/home_styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="design_files/Images/logo_final.png" alt="">
+        </div>
+
+        <button class="nav-toggle" aria-label="toggle-navigation">
+            <span class="hamburger"></span>
+        </button>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"> <a href="a" class="nav__link">Home</a> </li>
+                <li class="nav__item"> <a href="a" class="nav__link">About Me</a> </li>
+                <li class="nav__item"> <a href="a" class="nav__link">My Projects</a> </li>
+                <li class="nav__item"> <a href="a" class="nav__link">Resume</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Introduction-->
+    <section class="intro" id="home">
+        <h1 class="section_title--intro">
+            Justin Yue's <strong>Portfolio</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">UCI CS Student</p>
+        <img src="design_files/Images/salute.jpeg" alt="Picture of Justin Yue" class = "intro_img">
+    </section>
+
+    <!--About Me-->
+    <section class="about_me" id="about_info">
+        <h2 class="section__title">About Me</h2>
+        <p class = "section__subtitle section__subtitle--about">Interesting things about me</p>
+
+        <div class="about_info">
+            <div class="about">
+                <h3>Education</h3>
+                <p>I am a current student at the University of California, Irvine, studying
+                    computer science. I may or may not be declaring a statistics minor to
+                    supplement my CS education. My primary interest is to explore the applications
+                    of computer vision, and as a result, I have also branched into artificial intelligence,
+                    machine learning, app development, website development, and much more.
+                </p>
             </div>
 
-            <button class = "nav-toggle" aria-label = "toggle-navigation">
-                <span class = "hamburger"></span>
-            </button>
-
-            <nav class = "nav">
-                <ul class = "nav__list">
-                    <li class = "nav__item"> <a href = "a" class = "nav__link">Home</a> </li>
-                    <li class = "nav__item"> <a href = "a" class = "nav__link">About Me</a> </li>
-                    <li class = "nav__item"> <a href = "a" class = "nav__link">My Projects</a> </li>
-                    <li class = "nav__item"> <a href = "a" class = "nav__link">Resume</a> </li>
-                </ul>
-            </nav>
-        </header>
-
-        <!--Introduction-->
-        <section class = "intro" id = "home">
-            <h1 class = "section__title section__title--intro">
-                Justin <strong>Yue</strong>
-            </h1>
-            <p class = "section__subtitle section__subtitle--intro" style = "background-color: ff8b3d;">UCI CS Student</p>
-            <img src = "design_files/Images/salute.jpeg" alt = "Picture of Justin Yue">
-        </section>
-
-        <!--About Me-->
-        <section class = "about_me" id = "about_info">
-            <h2 class = "section_title section__title--about">About Me</h2>
-
-            <div class = "about_info">
-                <div class = "about">
-                    <h3>Education</h3>
-                    <p>I am a current student at the University of California, Irvine, studying
-                        computer science. I may or may not be declaring a statistics minor to 
-                        supplement my CS education. My primary interest is to explore the applications
-                        of computer vision, and as a result, I have also branced into artificial intelligence,
-                        machine learning, app development, website development, and much more. 
-                    </p>
-                </div>
-
-                <div class = "about">
+            <div class="about_info">
+                <div class="about">
                     <h3>Interests</h3>
                     <p>Ever since I was young, I have had an interest in technology mainly due to all
                         the science fiction media I grew up on. I retain my love for sci-fi, especially
                         in movies and mecha animation shows, but I enjoy watching sit-coms (think Friends
-                        and The Big Bang Theory) and action flicks. In addition, following Formula 1 interests 
+                        and The Big Bang Theory) and action flicks. In addition, following Formula 1 interests
                         me as I am always excited to see the new upgrades a car may have for a potentially
-                        action packed face. 
+                        action packed face.
                     </p>
                 </div>
+            </div>
 
-                <div class = "about">
+            <div class="about_info">
+                <div class="about">
                     <h3>Random Tidbits</h3>
                     <ul>
                         <li>Favorite exercise: Running</li>
@@ -76,45 +83,57 @@
                         <li>Reading legal thrillers is an exciting past time for me.</li>
                     </ul>
                 </div>
-
-                <a href = "#projects" class = "btn">My Projects</a>
-            </div>
-        </section>
-
-        <section class = "my-projects" id = "projects">
-            <h2 class = "section__title section__title--projects">My Projects</h2>
-            <p class = "section__subtitle section__subtitle--projects">
-
-            </p>
-
-            <div class = "projects__body">
-                <p></p>
-                <p></p>
             </div>
 
-            <img src = "design_files/Images/hymn_logo.png">
-        </section>
+            <a href="#projects" class="btn">My Projects</a>
+        </div>
+    </section>
 
-        <section class = "my-resume" id = "resume">
-            <h2 class = "section__title section__title--resume">My Resume</h2>
-            <p>As a software engineer, I hope to benefit my community for the better with software applications.</p>
-        </section>
+    <section class="my-projects" id="projects">
+        <h2 class="section__title">My Projects</h2>
+        <p class="section__subtitle section__subtitle--projects">Here are the projects that I have spent my free time on. They help build my 
+            skills in various technologies. 
+        </p>
 
-        <!--footer-->
-        <footer>
-            <a href = "mailto:hell@jane.dev" class = "footer--link">justinyue1643@gmail.com</a>
-            <ul class = "social-list">
-                <li class = "social-list__item"><a class = "social-list__link" href = "www.facebook.com">Facebook</a</li>
-                <li class = "social-list__item"><a class = "social-list__link" href = "www.instagram.com">Instagram</a</li>
-                <li class = "social-list__item"><a class = "social-list__link" href = "www.linkedin.com">LinkedIn</a</li>
-                <li class = "social-list__item"><a class = "social-list__link" href = "www.github.com">Github</a</li>
-            </ul>
-        </footer>
-        
-    </body>
+        <div class="projects__body">
+            <!--Project 1-->
+            <a href = "#" class = "project_item">
+                <img src = "design_files/Images/hymn_logo.png" alt = "" class = "project_img">
+            </a>
 
-    <script src = "design_files/js/index.js"></script>
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
+            <!--Project 2-->
+            <a href = "#" class = "project_item">
+                <img src = "design_files/Images/hymn_logo.png" alt = "" class = "project_img">
+            </a>
+
+            <!--Project 3-->
+            <a href = "#" class = "project_item">
+                <img src = "design_files/Images/hymn_logo.png" alt = "" class = "project_img">
+            </a>
+        </div>
+
+    </section>
+
+    <section class="my-resume" id="resume">
+        <h2 class="section__title">My Resume</h2>
+        <p>As a software engineer, I hope to benefit my community for the better with software applications.</p>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <a href="mailto:hell@jane.dev" class="footer--link">justinyue1643@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link" href="www.facebook.com">Facebook</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="www.instagram.com">Instagram</a> </li>
+            <li class="social-list__item"><a class="social-list__link" href="www.linkedin.com">LinkedIn</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="www.github.com">Github</a></li>
+        </ul>
+    </footer>
+</body>
+
+<script src="design_files/js/index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
 </html>

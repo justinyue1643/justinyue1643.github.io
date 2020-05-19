@@ -1,10 +1,8 @@
-*
+*,
 *::before,
 *::after {
     box-sizing: border-box;
 }
-
-/* Custom properties*/
 
 :root {
     --ff-primary: 'Jost', sans-serif;
@@ -15,67 +13,114 @@
 
     --clr-light: #fff;
     --clr-dark: black;
-    --clor-accent: #ff8b3d;
+    --clr-accent: #ff8b3d;
 
     --fs-hl: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0, .25), 0.125em 0.125 0.25em rgba(0,0,0,.15);
 }
 
-@media (min-width: 800px) {
+/*@media (max-width: 500px) {
     :root {
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
     }
-}
-
-/*General Styles */
-
-body {
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
-    margin: 0;
-    font-family: var(--ff-primary);
-    font-size: var(--fs-body);
-    line-height: 1.6;
-}
+}*/
 
 img {
     display: block;
     max-width: 100%;
 }
 
-strong {
-    font-weight: var(--fw-bold);
+body {
+    background-color: var(--clr-dark) !important;
+    color: var(--clr-light) !important;
+    margin: 0;
+    font-family: var(--ff-primary);
+    line-height: 1.6 !important;
 }
 
 h1, h2, h3 {
-    line-height: 1.1;
-    margin: 0;
+    line-height: 1 !important;
+    margin: 0 !important;
 }
 
-ul li {
-    color: white;
-}
+/*Typography*/
 
-h1 {font-size: var(--fs-h1)}
-h2 {font-size: var(--fs-h2)}
-h3 {font-size: var(--fs-h3)}
+h1 {font-size: var(--fs-hl) !important;}
+h2 {font-size: var(--fs-h2) !important ;}
+h3 {font-size: var(--fs-h3) !important;}
 
 .section__title{
     margin-bottom: .25em;
 }
 
-.section__subtitle {
-    margin: 0;
-    font-size: var(--fs-h3)
+.section_title--intro {
+    font-weight: var(--fw-reg);
 }
 
+.section_title--intro strong {
+    display: block;
+}
+
+strong {
+    font-weight: var(--fw-bold)!important;  
+}
+
+.section__subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+.section__subtitle--intro, .section__subtitle--projects, .section__subtitle--about {
+    background-color: var(--clr-accent) !important;
+    font-family: var(--ff-secondary) ;
+    margin-bottom: 1em !important;
+    padding: 0.25em;
+}
+
+/*Header*/
+
+.nav {
+    display: none !important;
+}
+
+/*Introduction*/
+
+.intro {
+    position: relative;
+}
+
+.intro {
+    display: grid;
+    /*shrink div down*/
+    width: min-content;
+    /*should center the div*/
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    grid-template-areas: "img title" "img subtitle";
+    grid-template-columns: min-content max-content;
+}
+
+.intro_img {
+    grid-area: img;
+    min-width: 250px;
+    position: relative;
+    z-index: 2;
+}
 
 .section__subtitle--intro {
-    background-color: var(--clr--accent);
-    font-family: var(--ff-secondary);
+    align-self: start;
+    grid-column: -1/1;
+    grid-row: 2;
+    text-align: right;
+    position: relative;
+    left: -1.5em;
+    width: calc(100% + 1.5em);
+    box-shadow:bs;
 }
