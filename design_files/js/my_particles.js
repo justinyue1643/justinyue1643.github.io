@@ -65,8 +65,8 @@ class Particle {
             }
         }*/
 
-        this.x += this.directionX * 0.4;
-        this.y += this.directionY * 0.4;
+        this.x += this.directionX * 0.3;
+        this.y += this.directionY * 0.3;
         this.draw();
     }
 }
@@ -100,13 +100,17 @@ function animate() {
     ctx.textAlign = "center";
     ctx.fillText("Justin Yue", canvas.width / 2, canvas.height / 2 - 100);
     ctx.fillText("UCI CS Major, Car Enthusiast/F1 Fan, Robotics Nerd", canvas.width/2, canvas.height/2 - 50);
+
+    ctx.globalAlpha = 0.2;
+    ctx.fillRect(80, 300, 810, 150);
+    ctx.globalAlpha = 1.0;
 }
 
 window.addEventListener('resize',
     function () {
-        canvas.width = innerWidth;
+        canvas.width = this.innerWidth;
         canvas.height = this.innerHeight;
-        this.onmousedown.radius = ((canvas.height / 80 * (canvas.width / 80)));
+        //this.onmousedown.radius = ((canvas.height / 80 * (canvas.width / 80)));
         init();
     });
 
