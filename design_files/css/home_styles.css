@@ -13,6 +13,8 @@
 
     --clr-light: #fff;
     --clr-dark: black;
+    --clr-gray: #A9A9A9;
+    --clr-custom-blue: #0066ff;
     --clr-accent: #ff8b3d;
 
     --fs-hl: 3rem;
@@ -54,7 +56,7 @@ h1, h2, h3 {
 
 h1 {font-size: var(--fs-hl) !important;}
 h2 {font-size: var(--fs-h2) !important ;}
-h3 {font-size: var(--fs-h3) !important;}
+h3 {font-size: var(--fs-h3) !important; padding: 0.5em;}
 
 .section__title{
     margin-bottom: .25em;
@@ -77,7 +79,7 @@ strong {
     font-size: var(--fs-h3);
 }
 
-.section__subtitle--intro, .section__subtitle--projects, .section__subtitle--about {
+.section__subtitle--intro, .section__subtitle--projects, .section__subtitle--about{
     background-color: var(--clr-accent) !important;
     font-family: var(--ff-secondary) ;
     margin-bottom: 1em !important;
@@ -94,6 +96,7 @@ strong {
 
 .intro {
     position: relative;
+    padding: 50px;;
 }
 
 .intro {
@@ -123,4 +126,59 @@ strong {
     left: -1.5em;
     width: calc(100% + 1.5em);
     box-shadow:bs;
+}
+
+.about_me {
+    background-color: var(--clr-gray);
+    background-image: url(../Images/Title_Image.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.section__title--about {
+    color: var(--clr-accent);
+    position: relative;
+    padding: 1em;
+}
+
+.section__title--about::after {
+    content: '----------' ;
+    display: block;
+    width: 25% ;
+    height: 1px ;
+    color: var(--clr-accent);
+    margin: 0.5em auto 1em;
+}
+
+.about_info {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0.25em;
+}
+
+.about p {
+    padding: 0.5em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1em;
+    margin: 1em;
+    background: var(--clr-accent)!important;
+    color: var(--clr-light)!important;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
 }
