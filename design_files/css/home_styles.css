@@ -234,6 +234,7 @@ strong {
 
 .my-resume {
     background-color:  var(--clr-accent) !important;
+    text-align: center;
 }
 
 .my-resume p {
