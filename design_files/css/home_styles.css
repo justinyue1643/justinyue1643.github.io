@@ -55,7 +55,7 @@ h1, h2, h3 {
 /*Typography*/
 
 h1 {font-size: var(--fs-hl) !important;}
-h2 {font-size: var(--fs-h2) !important ;}
+h2 {font-size: var(--fs-h2) !important ; padding: 1em; }
 h3 {font-size: var(--fs-h3) !important; padding: 0.5em;}
 
 .section__title{
@@ -140,11 +140,10 @@ strong {
 .section__title--about {
     color: var(--clr-accent);
     position: relative;
-    padding: 1em;
 }
 
 .section__title--about::after {
-    content: '----------' ;
+    content: '______________' ;
     display: block;
     width: 25% ;
     height: 1px ;
@@ -164,6 +163,11 @@ strong {
     padding: 0.5em;
 }
 
+:focus {
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 3px !important;
+}
+
 .btn {
     display: inline-block;
     padding: 1em;
@@ -181,4 +185,84 @@ strong {
 
 .btn:hover {
     transform: scale(1.1);
+}
+
+/*My Projects*/
+.my-projects {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.section__title--projects {
+    color: var(--clr-accent);
+    position: relative;
+}
+
+.section__subtitle--projects {
+    color: var(--clr-light);
+    font-weight: var(--fw-bold);
+}
+
+.projects_body {
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 180px 180px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.project_item {
+    background: var(--clr-accent) !important;
+    overflow: hidden !important; 
+}
+
+.project__img {
+    transition: transform 750ms cubic-bezier(.5, 0, .5, 1) !important;
+    opacity: 250ms linear !important;
+}
+
+.portfolio__item:focus {
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+.portfolio__img:hover,
+.potfolio__item:focus .portfolio__img {
+    transform: scale(1.2) !important; 
+    opacity: .75 !important;
+}
+
+.my-resume {
+    background-color:  var(--clr-accent) !important;
+}
+
+.my-resume p {
+    padding: 0.5em;
+}
+
+.footer {
+    background-color: var(--clr-dark);
+    color: var(--clr-accent);
+    text-align: center;
+    padding: 2.5em 0;
+}
+
+.footer a {
+    color: var(--clr-accent);
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+    padding: 0;
+}
+
+.social-list__item {
+    margin: 0 .5em;
+}
+
+.social-list__link {
+    padding: .5em;
 }
