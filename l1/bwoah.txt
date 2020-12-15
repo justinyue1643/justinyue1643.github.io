@@ -1,1 +1,1 @@
-LINK l2/bwoah.txt
+LINK l2/bwoah2.txt
